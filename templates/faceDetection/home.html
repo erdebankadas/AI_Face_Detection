@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Home</title>
+</head>
+<body style="background-image:url({% static 'images/Recognition.jpg' %}); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+    <nav class="navbar navbar-light bg-dark" style = "height:110px; ">
+        <img src={%static "images/logo2.png"%} title="shivila logo" href="{% url 'home' %}" alt="shivila" style="width:300px; height:95px; object-fit:cover; object-position:40% 40%; position: absolute; left: 50%; margin-left:-150px; top:0%; margin-top:10px;">
+            <a class="navbar-brand" href="{% url 'home' %}"></a>
+    </nav>
+            <div style="padding:10%;text-align:center; width:auto;margin-top: 80px;
+            margin-bottom: auto;
+            margin-left: 400px;
+            Margin-right: 400px;
+            background: rgba(255, 255, 255, 0.5);
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            text-align: center;
+            color: white;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;">
+                <h1>FACE <font color ="00FF00">DETECTION</font></h1>
+                <a type="button" class="btn btn-outline-primary" href="{% url 'register' %}" style = " color: black;"><button>REGISTER</button></a>
+                <a type="button" class="btn btn-outline-secondary" href="{% url 'login' %}" style = " color: black; margin-left: 20px;"><button>LOGIN</button></a>
+            </div>
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
